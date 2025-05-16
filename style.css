@@ -1,0 +1,90 @@
+/*
+ Theme Name:   AM Real Estate Child
+ Theme URI:    https://amrealestateny.com/
+ Description:  Child theme for AM Real Estate — override Events Calendar templates
+ Author:       Chis Hurst
+ Author URI:   https://iamchrishurst.com/
+ Template:     am-real-estate
+ Version:      2.0.0
+ Text Domain:  am-real-estate-child
+*/
+
+/* =Custom CSS below this line
+--------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "IM Fell English", serif !important;
+	color: #3f5a36 !important;}
+
+.tribe-common .tribe-common-h3 {
+	color: #3f5a36 !important;
+	font-family: "IM Fell English", serif;
+}
+
+.tribe-common,
+.tribe-events-pg-template {
+    margin-top: 120px !important;
+}
+
+.tribe-common-c-btn-border-small,
+.tribe-events-header__events-bar,
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__today-button {
+    display: none !important;
+}
+
+.tribe-events-calendar-month__header .header-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.tribe-events-back a {
+    color: #3f5a36 !important;
+    font-family: "IM Fell English", serif;
+}
+
+.tribe-events-calendar-month__header-title,
+.tribe-events-calendar-month__header-column-title-mobile,
+.tribe-events-calendar-month__header-column-title-desktop {
+	font-family: "IM Fell English", serif;
+	font-size: 22px;
+	font-weight: 400;
+	color: #3f5a36;
+	margin: 0;
+}
+
+.tribe-events-c-nav,
+.header-container {
+    width: 100%;
+}
+
+.tribe-events-c-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 769px) {
+	.tribe-common,
+    .tribe-events-pg-template {
+        margin-top: 80px !important;
+    }
+
+    .tribe-events-calendar-month-mobile-events .tribe-events-c-nav__list {
+        display: none !important;
+    }
+}
+
+@media (max-width: 680px) {
+	.tribe-events-calendar-month__header-column-title-desktop {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 420px) {
+	.tribe-events-calendar-month__header-column-title-desktop {
+		font-size: 12px;
+	}
+}
