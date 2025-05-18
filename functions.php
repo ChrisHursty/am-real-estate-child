@@ -18,3 +18,14 @@ add_action( 'wp_enqueue_scripts', function() {
 add_filter( 'tribe_events_views_v2_default_view', function( $default ) {
     return 'month';
 } );
+
+function amre_child_enqueue_fonts() {
+  // Notice: version = null means WP will NOT tack on ?ver=###  
+  wp_enqueue_style(
+    'amre-google-fonts',
+    'https://fonts.googleapis.com/css2?family=IM+Fell+English+SC:wght@700&display=swap',
+    [],
+    null
+  );
+}
+add_action('wp_enqueue_scripts', 'amre_child_enqueue_fonts', 20);
